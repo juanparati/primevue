@@ -210,6 +210,18 @@
                             </button>
                             <span>Soho Dark</span>
                         </div>
+                        <div class="p-col-3">
+                            <button class="p-link" type="button" @click="changeTheme($event, 'mira')">
+                                <img src="demo/images/themes/mira.jpg" alt="Mira" />
+                            </button>
+                            <span>Mira</span>
+                        </div>
+                        <div class="p-col-3">
+                            <button class="p-link" type="button" @click="changeTheme($event, 'nano')">
+                                <img src="demo/images/themes/nano.jpg" alt="Mira" />
+                            </button>
+                            <span>Nano</span>
+                        </div>
                     </div>
 
                     <h4>Legacy Free Themes</h4>
@@ -326,6 +338,8 @@
 </template>
 
 <script>
+import EventBus from '@/EventBus';
+
 export default {
     props: {
         theme: String,
@@ -346,6 +360,16 @@ export default {
                 this.unbindOutsideClickListener();
             }
         }
+    },
+    mounted() {
+        EventBus.on('change-theme', event => {
+            if (event.theme === 'nano')
+                this.scale = 12;
+            else
+                this.scale = 14;
+
+            this.applyScale();
+        });
     },
     methods: {
         toggleConfigurator(event) {
@@ -387,14 +411,17 @@ export default {
         },
         decrementScale() {
             this.scale--;
-            document.documentElement.style.fontSize = this.scale + 'px';
+            this.applyScale();
         },
         incrementScale() {
             this.scale++;
+            this.applyScale();
+        },
+        applyScale() {
             document.documentElement.style.fontSize = this.scale + 'px';
         },
         onRippleChange(value) {
-            this.$primevue.ripple = value;
+            this.$primevue.config.ripple = value;
         }
     },
     computed: {
@@ -402,7 +429,7 @@ export default {
             return ['layout-config', {'layout-config-active': this.active}];
         },
         rippleActive() {
-            return this.$primevue.ripple;
+            return this.$primevue.config.ripple;
         }
     }
 }

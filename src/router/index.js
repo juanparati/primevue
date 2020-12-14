@@ -18,6 +18,16 @@ const routes = [
         component: () => import('../views/accessibility/AccessibilityDemo.vue')
     },
     {
+        path: '/locale',
+        name: 'locale',
+        component: () => import('../views/locale/LocaleDemo.vue')
+    },
+    {
+        path: '/avatar',
+        name: 'avatar',
+        component: () => import('../views/avatar/AvatarDemo.vue')
+    },
+    {
         path: '/support',
         name: 'support',
         component: () => import('../views/support/Support.vue')
@@ -48,6 +58,11 @@ const routes = [
         component: () => import('../views/badge/BadgeDemo.vue')
     },
     {
+        path: '/chip',
+        name: 'chip',
+        component: () => import('../views/chip/ChipDemo.vue')
+    },
+    {
         path: '/blockui',
         name: 'blockui',
         component: () => import('../views/blockui/BlockUIDemo.vue')
@@ -76,6 +91,11 @@ const routes = [
         path: '/carousel',
         name: 'carousel',
         component: () => import('../views/carousel/CarouselDemo.vue')
+    },
+    {
+        path: '/cascadeselect',
+        name: 'cascadeselect',
+        component: () => import('../views/cascadeselect/CascadeSelectDemo.vue')
     },
     {
         path: '/chart',
@@ -131,6 +151,16 @@ const routes = [
         path: '/colorpicker',
         name: 'colorpicker',
         component: () => import('../views/colorpicker/ColorPickerDemo.vue')
+    },
+    {
+        path: '/confirmdialog',
+        name: 'confirmdialog',
+        component: () => import('../views/confirmdialog/ConfirmDialogDemo.vue')
+    },
+    {
+        path: '/confirmpopup',
+        name: 'confirmpopup',
+        component: () => import('../views/confirmpopup/ConfirmPopupDemo.vue')
     },
     {
         path: '/contextmenu',
@@ -293,6 +323,11 @@ const routes = [
         component: () => import('../views/display/DisplayDemo.vue')
     },
     {
+        path: '/divider',
+        name: 'divider',
+        component: () => import('../views/divider/DividerDemo.vue')
+    },
+    {
         path: '/dropdown',
         name: 'dropdown',
         component: () => import('../views/dropdown/DropdownDemo.vue')
@@ -361,6 +396,26 @@ const routes = [
         path: '/inputnumber',
         name: 'inputnumber',
         component: () => import('../views/inputnumber/InputNumberDemo.vue')
+    },
+    {
+        path: '/scrolltop',
+        name: 'scrolltop',
+        component: () => import('../views/scrolltop/ScrollTopDemo.vue')
+    },
+    {
+        path: '/skeleton',
+        name: 'skeleton',
+        component: () => import('../views/skeleton/SkeletonDemo.vue')
+    },
+    {
+        path: '/splitter',
+        name: 'splitter',
+        component: () => import('../views/splitter/SplitterDemo.vue')
+    },
+    {
+        path: '/knob',
+        name: 'knob',
+        component: () => import('../views/knob/KnobDemo.vue')
     },
     {
         path: '/listbox',
@@ -555,6 +610,11 @@ const routes = [
         path: '/tabview',
         name: 'tabview',
         component: () => import('../views/tabview/TabViewDemo.vue')
+    },
+    {
+        path: '/tag',
+        name: 'tag',
+        component: () => import('../views/tag/TagDemo.vue')
     },
     {
         path: '/text',

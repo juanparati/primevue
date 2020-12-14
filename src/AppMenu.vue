@@ -12,6 +12,8 @@
                 <a href="https://github.com/primefaces/primevue" target="_blank">Source Code</a>
                 <router-link to="/support">Support</router-link>
                 <a href="https://www.primefaces.org/store" target="_blank">Store</a>
+                <router-link to="/locale">Locale <Tag value="New"></Tag></router-link>
+                <router-link to="/accessibility">Accessibility</router-link>
             </div>
 
             <div class="menu-category">Theming</div>
@@ -43,6 +45,7 @@
             <div class="menu-items">
                 <router-link to="/autocomplete">AutoComplete</router-link>
                 <router-link to="/calendar">Calendar</router-link>
+                <router-link to="/cascadeselect">CascadeSelect <Tag value="New"></Tag></router-link>
                 <router-link to="/checkbox">Checkbox</router-link>
                 <router-link to="/chips">Chips</router-link>
                 <router-link to="/colorpicker">ColorPicker</router-link>
@@ -54,6 +57,7 @@
                 <router-link to="/inputswitch">InputSwitch</router-link>
                 <router-link to="/inputtext">InputText</router-link>
                 <router-link to="/floatlabel">FloatLabel</router-link>
+                <router-link to="/knob">Knob <Tag value="New"></Tag></router-link>
                 <router-link to="/listbox">Listbox</router-link>
                 <router-link to="/multiselect">MultiSelect</router-link>
                 <router-link to="/password">Password</router-link>
@@ -119,7 +123,7 @@
                 <router-link to="/organizationchart">OrganizationChart</router-link>
                 <router-link to="/paginator">Paginator</router-link>
                 <router-link to="/picklist">PickList</router-link>
-                <router-link to="/timeline">Timeline <span class="p-tag">New</span></router-link>
+                <router-link to="/timeline">Timeline </router-link>
                 <router-link to="/tree" v-slot="{isActive}" custom>
                     <div>
                         <a tabindex="0" @click="toggleSubmenu($event, 'tree')">Tree</a>
@@ -165,8 +169,10 @@
                 <router-link to="/accordion">Accordion</router-link>
                 <router-link to="/card">Card</router-link>
                 <router-link to="/deferredcontent">Deferred</router-link>
+                <router-link to="/divider">Divider <Tag value="New"></Tag></router-link>
                 <router-link to="/fieldset">Fieldset</router-link>
                 <router-link to="/panel">Panel</router-link>
+                <router-link to="/splitter">Splitter <Tag value="New"></Tag></router-link>
                 <router-link to="/scrollpanel">ScrollPanel</router-link>
                 <router-link to="/tabview">TabView</router-link>
                 <router-link to="/toolbar">Toolbar</router-link>
@@ -174,6 +180,8 @@
 
             <div class="menu-category">Overlay</div>
             <div class="menu-items">
+                <router-link to="/confirmdialog">ConfirmDialog <Tag value="New"></Tag></router-link>
+                <router-link to="/confirmpopup">ConfirmPopup <Tag value="New"></Tag></router-link>
                 <router-link to="/dialog">Dialog</router-link>
                 <router-link to="/overlaypanel">OverlayPanel</router-link>
                 <router-link to="/sidebar">Sidebar</router-link>
@@ -245,13 +253,17 @@
 
             <div class="menu-category">Misc</div>
             <div class="menu-items">
-                <router-link to="/accessibility">Accessibility</router-link>
-                <router-link to="/badge">Badge</router-link>
+                <router-link to="/avatar">Avatar <Tag value="New"></Tag></router-link>
+                <router-link to="/badge">Badge <Tag value="New"></Tag></router-link>
+                <router-link to="/chip">Chip <Tag value="New"></Tag></router-link>
                 <router-link to="/blockui">BlockUI</router-link>
                 <router-link to="/inplace">Inplace</router-link>
+                <router-link to="/scrolltop">ScrollTop <Tag value="New"></Tag></router-link>
+                <router-link to="/skeleton">Skeleton <Tag value="New"></Tag></router-link>
                 <router-link to="/progressbar">ProgressBar</router-link>
                 <router-link to="/progressspinner">ProgressSpinner</router-link>
                 <router-link to="/ripple">Ripple</router-link>
+                <router-link to="/tag">Tag <Tag value="New"></Tag></router-link>
                 <router-link to="/terminal">Terminal</router-link>
             </div>
         </div>
